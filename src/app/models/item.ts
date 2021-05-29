@@ -3,6 +3,6 @@ import { Extra } from "./extra";
 export interface Item {
     id: string;
     name: string;
-    price: number;
+    price: string;
     extras: Extra[];
 }
