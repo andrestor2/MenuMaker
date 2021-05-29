@@ -2,7 +2,7 @@
 
 This project was created to build a large list of menu data to save time in othe app.
 
-The other application is really importat for my wife's business and she are spending a lot of time creating the menus items and update its values.
+The other application is really importat for my wife's business and she is spending a lot of time creating the menus items and update its values.
 
 I nedd to help her with this terrified task!
 
