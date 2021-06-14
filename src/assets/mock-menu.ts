@@ -1,6 +1,6 @@
 import { Categorie } from 'src/app/models/categorie';
 
-export const MENUS: Categorie[] = [
+export const MOCK_CATEGORIES: Categorie[] = [
   {
     name: 'PREDISEÑADAS',
     items: [

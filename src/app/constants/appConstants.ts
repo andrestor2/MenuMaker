@@ -1,4 +1,6 @@
 export class AppConstants {
-  public static MENU_DATA: string = 'MENU_DATA';
+  static EXTERNAL_TOKEN = 'externalToken';
+  static EXTERNAL_MENU = 'externalMenu';
+  static MENU_DATA: string = 'MENU_DATA';
   static TEXT_FILE: string = 'menuData.txt';
 }

@@ -1,0 +1,23 @@
+<!--<div>
+  <input value="[username]">
+  <input value="[password]">
+</div>
+-->
+<div class="column">
+  <div class="left">
+    <h2>My Categories</h2>
+    <div>
+      <button (disabled)="menuLoaded" (click)="loadMenu(false)"> Load menu </button>
+    </div>
+    <ul class="categories">
+      <li *ngFor="let categorie of processedMenu" [class.selected]="categorie === selectedCategorie"
+        (click)="onSelect(categorie)">
+        <span class="badge">{{ categorie.items.length }}</span>
+        {{ categorie.name }}
+      </li>
+    </ul>
+  </div>
+  <div class="right">
+    <app-categorie-detail [categorie]="selectedCategorie"></app-categorie-detail>
+  </div>
+</div>

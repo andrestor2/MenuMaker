@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { MenusComponent } from './menus/menus.component';
+import { MenusComponent } from './feature/menus/menus.component';
 import { FileSaverModule } from 'ngx-filesaver';
 import { FormsModule } from '@angular/forms';
-import { CategorieDetailComponent } from './categorie-detail/categorie-detail.component';
+import { SharedModule } from './shared/shared.module';
+import { CategorieDetailComponent } from './feature/categorie-detail/categorie-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,10 +16,11 @@ import { CategorieDetailComponent } from './categorie-detail/categorie-detail.co
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
     FileSaverModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })

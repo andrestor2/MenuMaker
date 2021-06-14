@@ -1,10 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { AppConstants } from '../constants/appConstants';
 
-import { Categorie } from '../models/categorie';
-import { Extra } from '../models/extra';
-import { Item } from '../models/item';
+import { AppConstants } from '../../constants/appConstants';
+
+import { Categorie } from '../../models/categorie';
+import { Extra } from '../../models/extra';
+import { Item } from '../../models/item';
+import { DataClientService } from './data-client.service';
 import { FileGenerationService } from './file-generation.service';
 
 @Injectable({
@@ -13,22 +15,13 @@ import { FileGenerationService } from './file-generation.service';
 export class MenuService {
   constructor(
     private http: HttpClient,
-    private fileGenerationService: FileGenerationService
-  ) {}
+    private fileGenerationService: FileGenerationService,
+    private dataClientService: DataClientService
+  ) { }
 
-  public getMenu() {
-    /*
-    this.http.get('assets/menu.json').subscribe((data: any) => {
-      let fullMenu = this.getGeneralData(data).data.menu[0];
-      //Save in SessionStorage      
-      sessionStorage.setItem(AppConstants.MENU_DATA, JSON.stringify(fullMenu));      
-    });
-    */
-  }
-
-  private getGeneralData(data: any) {
+  public getGeneralData(data: any) {
     let fullMenu: Categorie[];
-    let categories = this.getCategories(data.categories);
+    let categories = this.getCategories(data);
 
     fullMenu = categories;
     return fullMenu;

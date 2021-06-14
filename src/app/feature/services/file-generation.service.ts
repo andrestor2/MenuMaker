@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 
 import { FileSaverService } from 'ngx-filesaver';
-import { AppConstants } from '../constants/appConstants';
+import { AppConstants } from '../../constants/appConstants';
 
 @Injectable({
   providedIn: 'root',
 })
 export class FileGenerationService {
-  constructor(private fileSAverService: FileSaverService) {}
+  constructor(private fileSAverService: FileSaverService) { }
 
   public downloadFile() {
     //Get info from localStorage

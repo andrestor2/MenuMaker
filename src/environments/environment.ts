@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  apiUrl: 'https://jsonplaceholder.typicode.com',
+  host: 'https://api.waiterio.com',
+  authenticationPath: 'api/v3/authentication',
+  batchPath: 'api/v3/batch/',
 };
 
 /*

@@ -1,0 +1,32 @@
+export const AUTH_BODY = {
+  authenticationType: 'Basic ',
+  authenticationCredentials: 'bWVsaWZlcnVpekBnbWFpbC5jb206Tm9raWExMzA4',
+  device: {
+    _id: '442ab7b59c77b89b57352d45',
+    creationTime: 1622328743396,
+    lastEditTime: 1622328743396,
+    networkAdapters: [],
+    browser: true,
+    os: 'Windows',
+    size: 'desktop',
+  },
+  user: {
+    language: 'en',
+    _id: '6e020372aced2f79f7283b26',
+    creationTime: 1622328743397,
+    lastEditTime: 1622328743397,
+    firstName: '',
+    lastName: '',
+    settings: {
+      showTips: 'NEVER',
+      showSuggestions: true,
+      ratedAndroidApp: false,
+      sortOrdersBy: 'TABLE_NAME',
+      showOnlyMyOrders: false,
+      hidePaidOrders: true,
+      hideOrdersAutomatically: 'AT_6AM',
+      ordersLayout: 'MULTI_COLUMN_VIEW',
+    },
+  },
+  expireTime: 0,
+};
