@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { MenusComponent } from './feature/menus/menus.component';
+import { CategorieDetailComponent } from './feature/categorie-detail/categorie-detail.component';
 import { FileSaverModule } from 'ngx-filesaver';
 import { FormsModule } from '@angular/forms';
-import { SharedModule } from './shared/shared.module';
-import { CategorieDetailComponent } from './feature/categorie-detail/categorie-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { CategorieDetailComponent } from './feature/categorie-detail/categorie-d
     BrowserModule,
     FileSaverModule,
     FormsModule,
-    SharedModule
+    HttpClientModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],

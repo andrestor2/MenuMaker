@@ -1,23 +1,14 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-
-import { AppConstants } from '../../constants/appConstants';
 
 import { Categorie } from '../../models/categorie';
 import { Extra } from '../../models/extra';
 import { Item } from '../../models/item';
-import { DataClientService } from './data-client.service';
-import { FileGenerationService } from './file-generation.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class MenuService {
-  constructor(
-    private http: HttpClient,
-    private fileGenerationService: FileGenerationService,
-    private dataClientService: DataClientService
-  ) { }
+  constructor() { }
 
   public getGeneralData(data: any) {
     let fullMenu: Categorie[];

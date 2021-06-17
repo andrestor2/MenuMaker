@@ -10,10 +10,12 @@ import { MenuService } from '../services/menu.service';
   styleUrls: ['./menus.component.css'],
 })
 export class MenusComponent implements OnInit {
-  
+
   selectedCategorie?: Categorie;
   processedMenu: Categorie[] = [];
   rawMenu?: any;
+  username?: string;
+  password?: string;
   menuLoaded = false;
 
   constructor(
@@ -30,29 +32,30 @@ export class MenusComponent implements OnInit {
 
   loadMenu(useExternal: boolean) {
     let localToken = localStorage.getItem(AppConstants.EXTERNAL_TOKEN);
-    this.rawMenu  =localStorage.getItem(AppConstants.EXTERNAL_MENU);
-    let username = 'meliferuiz@gmail.com';
-    let password = 'Nokia1308';
-
+    this.rawMenu = localStorage.getItem(AppConstants.EXTERNAL_MENU);
     if (!localToken || !this.rawMenu || useExternal) {
-      console.log('Load Data');
-      this.dataClientService.getTokenClient(username, password).subscribe((res: any) => {
-        localStorage.setItem(AppConstants.EXTERNAL_TOKEN, res.waiterioToken);
-        localToken = res.waiterioToken;
-        if (localToken) {
-          this.dataClientService.getMenuClient(localToken).subscribe((res: any) => {
-            this.rawMenu = res.menus[0].categories;
-            localStorage.setItem(AppConstants.EXTERNAL_MENU, JSON.stringify(this.rawMenu));
+      if (this.username && this.password) {
+        console.log('Load Data');
+        this.menuLoaded = false;
+        this.dataClientService.getTokenClient(this.username, this.password).subscribe((res: any) => {
+          localStorage.setItem(AppConstants.EXTERNAL_TOKEN, res.waiterioToken);
+          localToken = res.waiterioToken;
+          if (localToken) {
+            this.dataClientService.getMenuClient(localToken).subscribe((res: any) => {
+              this.rawMenu = res.menus[0].categories;
+              localStorage.setItem(AppConstants.EXTERNAL_MENU, JSON.stringify(this.rawMenu));
 
-            this.processedMenu = this.menuService.getGeneralData(this.rawMenu);
-            this.menuLoaded = true;
-          });
-        }
-      });
+              this.processedMenu = this.menuService.getGeneralData(this.rawMenu);
+              this.menuLoaded = true;
+            });
+          }
+        });
+      }
     } else {
-      this.rawMenu = JSON.parse(this.rawMenu);
-      this.processedMenu = this.menuService.getGeneralData(this.rawMenu);
+      
+      this.menuLoaded = false;
+      this.processedMenu = this.menuService.getGeneralData(JSON.parse(this.rawMenu));
+      this.menuLoaded = true;
     }
-
   }
 }

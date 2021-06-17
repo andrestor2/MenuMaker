@@ -1,16 +1,13 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-
 import { AUTH_BODY } from 'src/assets/authenticationBody';
 import { MENU_BODY } from 'src/assets/getMenuBody';
 import { environment } from 'src/environments/environment';
-import { AppConstants } from '../../constants/appConstants';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DataClientService {
-  private token: string = '';
 
   constructor(private http: HttpClient) { }
 
@@ -26,6 +23,11 @@ export class DataClientService {
     };
 
     return this.http.post(urlAuth, updatedBody, httpOptions);
+  }
+
+  getTokenClient2() {
+    const urlAuth = "https://jsonplaceholder.typicode.com/todos";
+    return this.http.get(urlAuth);
   }
 
   getUpdatedAuthBody() {

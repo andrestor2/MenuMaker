@@ -1,13 +1,27 @@
-<!--<div>
-  <input value="[username]">
-  <input value="[password]">
-</div>
--->
 <div class="column">
   <div class="left">
-    <h2>My Categories</h2>
-    <div>
-      <button (disabled)="menuLoaded" (click)="loadMenu(false)"> Load menu </button>
+    <div *ngIf="processedMenu.length !== 0">
+      <h2>Loaded Menu</h2>
+    </div>
+    <div *ngIf="processedMenu.length === 0">
+      <h2>Load Menu</h2>
+      <div>
+        <form>
+          <div>
+            <label for="email1">User name </label>
+            <input type="text" id="email" name="email" [(ngModel)]="username" class="email" maxlength="256" required />
+          </div>
+          <div>
+            <label for="password">Password </label>
+            <input type="password" id="password" name="password" [(ngModel)]="password" class="password" required
+              minlength="8" maxlength="16" />
+          </div>
+          <br>
+          <button id="login" type="button" (click)="loadMenu(false)">Load menu
+            <i class="fa fa-sign-in" aria-hidden="true"></i>
+          </button>          
+        </form>
+      </div>
     </div>
     <ul class="categories">
       <li *ngFor="let categorie of processedMenu" [class.selected]="categorie === selectedCategorie"
@@ -20,4 +34,7 @@
   <div class="right">
     <app-categorie-detail [categorie]="selectedCategorie"></app-categorie-detail>
   </div>
+</div>
+<div *ngIf="processedMenu.length !== 0">
+  <button (disabled)="menuLoaded" (click)="loadMenu(true)"> Reload Menu </button>
 </div>
