@@ -1,4 +1,4 @@
-export interface Extra {
+export interface Addition {
     id: string;
     name: string;
     price: string;

@@ -10,7 +10,6 @@ import { MenuService } from '../services/menu.service';
   styleUrls: ['./menus.component.css'],
 })
 export class MenusComponent implements OnInit {
-
   selectedCategorie?: Categorie;
   processedMenu: Categorie[] = [];
   rawMenu?: any;
@@ -49,7 +48,6 @@ export class MenusComponent implements OnInit {
               this.rawMenu.menu = res.menus[0].categories;
               this.rawMenu.lastEditTime = new Date(res.menus[0].lastEditTime);
               this.rawMenu.creationTime = new Date(res.menus[0].creationTime);
-              
               this.lastEditTime = this.rawMenu.lastEditTime;
               this.creationTime = this.rawMenu.creationTime;
               localStorage.setItem(AppConstants.EXTERNAL_MENU, JSON.stringify(this.rawMenu));
@@ -61,7 +59,6 @@ export class MenusComponent implements OnInit {
         });
       }
     } else {
-
       this.menuLoaded = false;
       this.rawMenu = JSON.parse(this.rawMenu);
       this.lastEditTime = this.rawMenu.lastEditTime;
@@ -70,6 +67,4 @@ export class MenusComponent implements OnInit {
       this.menuLoaded = true;
     }
   }
-
-
 }

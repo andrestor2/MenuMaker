@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import { Categorie } from '../../models/categorie';
-import { Extra } from '../../models/extra';
+import { Addition } from '../../models/addition';
 import { Item } from '../../models/item';
 
 @Injectable({
@@ -42,7 +42,7 @@ export class MenuService {
         id: item.id,
         name: item.name,
         price: item.price,
-        extras: extras,
+        additions: extras,
       };
 
       itemList.push(newItem);
@@ -52,10 +52,10 @@ export class MenuService {
   }
 
   private getExtras(extras: any[]) {
-    let extrasList: Extra[] = [];
+    let extrasList: Addition[] = [];
 
     extras.forEach((extra) => {
-      let newExtra: Extra = {
+      let newExtra: Addition = {
         id: extra.id,
         name: extra.name,
         price: extra.price,

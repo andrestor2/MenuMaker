@@ -1,8 +1,8 @@
-import { Extra } from "./extra";
+import { Addition } from "./addition";
 
 export interface Item {
     id: string;
     name: string;
     price: string;
-    extras: Extra[];
+    additions: Addition[];
 }

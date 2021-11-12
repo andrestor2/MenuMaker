@@ -1,10 +1,10 @@
 export const AUTH_BODY = {
   authenticationType: 'Basic ',
-  authenticationCredentials: 'bWVsaWZlcnVpekBnbWFpbC5jb206Tm9raWExMzA4',
+  authenticationCredentials: 'bWVsaWZlcnVpekBnbWFpbC5jb206TGFhcmVwYXJvamEyMDIx',
   device: {
-    _id: '442ab7b59c77b89b57352d45',
-    creationTime: 1622328743396,
-    lastEditTime: 1622328743396,
+    _id: 'ac0c871e8488f44d46fbf4c3',
+    creationTime: 1636408642649,
+    lastEditTime: 1636408642649,
     networkAdapters: [],
     browser: true,
     os: 'Windows',
@@ -12,9 +12,9 @@ export const AUTH_BODY = {
   },
   user: {
     language: 'en',
-    _id: '6e020372aced2f79f7283b26',
-    creationTime: 1622328743397,
-    lastEditTime: 1622328743397,
+    _id: '75495d5b0cdab9b73871c1c3',
+    creationTime: 1636408642650,
+    lastEditTime: 1636408642650,
     firstName: '',
     lastName: '',
     settings: {

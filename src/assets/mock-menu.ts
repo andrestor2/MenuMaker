@@ -8,19 +8,19 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'd4529f9038c5736bbc7b71e3',
         name: 'Paquete de Arepa Cruda x5',
         price: '3500',
-        extras: [],
+        additions: [],
       },
       {
         id: '22f6555abe0ebf138901173c',
         name: 'Paquete crudas x10',
         price: '7000',
-        extras: [],
+        additions: [],
       },
       {
         id: '8825d862c7f4ce7ae11bf607',
         name: 'Arepa Sencilla',
         price: '800',
-        extras: [
+        additions: [
           {
             id: 'cad678da88a1259adcf01eec',
             name: 'Mantequilla',
@@ -37,7 +37,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'a6e3d63171c99b6db5253c3d',
         name: 'Arepa Queso Crema',
         price: '2000',
-        extras: [
+        additions: [
           {
             id: '64258d603cd2766bdc2d21d7',
             name: 'Adicion Maicitos dulces',
@@ -89,7 +89,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '3b5b9af8bf63a073764fa401',
         name: 'Arepa Queso Cuajada',
         price: '2400',
-        extras: [
+        additions: [
           {
             id: '6374711975721703974cfb9a',
             name: 'Adicion Maicitos dulces',
@@ -141,7 +141,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'def92e4c8fa44130550a9a74',
         name: 'Arepa Jamon y Queso',
         price: '3500',
-        extras: [
+        additions: [
           {
             id: '4291d26dbf86ceaac1c347bf',
             name: 'Cuajada',
@@ -198,7 +198,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '34cc9008e2308ca5171ab2d9',
         name: 'Arepa Mixta Cheese',
         price: '3500',
-        extras: [
+        additions: [
           {
             id: '3d84c051df525697fc4657d3',
             name: 'Adicion Maicitos dulces',
@@ -250,7 +250,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'a3d830e51cabb4ba925c1294',
         name: 'Arepa Burguer',
         price: '5000',
-        extras: [
+        additions: [
           {
             id: 'fcd56e8d2f50b5449ed9595a',
             name: 'Cuajada',
@@ -307,7 +307,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '2339d9461f2e4e998b3236a0',
         name: 'Arepa con Chorizo Cuyabro',
         price: '4500',
-        extras: [
+        additions: [
           {
             id: 'b75f853afd4d7c1e39694a0d',
             name: 'Adicion Maicitos dulces',
@@ -359,7 +359,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'a40f3b8d964cf9e6dbd01885',
         name: 'Arepa Ranchera',
         price: '4800',
-        extras: [
+        additions: [
           {
             id: '1d6720cce7c4db4a73c3d2b4',
             name: 'Adicion Maicitos dulces',
@@ -411,7 +411,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'ea82de543a2437e3e08b9e95',
         name: 'Arepa Roja',
         price: '4000',
-        extras: [
+        additions: [
           {
             id: '4032e56d7cc214acea2dc2ea',
             name: 'Adicion Maicitos dulces',
@@ -468,7 +468,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'ce166a260929a236a7405f05',
         name: 'Arepa Ranchera',
         price: '4800',
-        extras: [
+        additions: [
           {
             id: '4bf0c5a7015298ad391a352e',
             name: 'Adicion Maicitos dulces',
@@ -520,25 +520,25 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'b89c86fbb27e97a1e57f4a5b',
         name: 'Arepa Carne Burguer',
         price: '4500',
-        extras: [],
+        additions: [],
       },
       {
         id: 'd69579909982ba48a5327edf',
         name: 'Arepa Hawaiana',
         price: '3200',
-        extras: [],
+        additions: [],
       },
       {
         id: 'd722f7341e78871f0ec2a01c',
         name: 'Arepa Cruda Unidad',
         price: '700',
-        extras: [],
+        additions: [],
       },
       {
         id: '77a2db3eca433d1c2abd7cc5',
         name: 'Arepa Roja 1Loncha',
         price: '3300',
-        extras: [],
+        additions: [],
       },
     ],
   },
@@ -549,7 +549,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '8e0498d4a8af2ca8652806e3',
         name: 'Huevos Montañero',
         price: '7600',
-        extras: [
+        additions: [
           {
             id: '17d6983b293ff76fc6041437',
             name: 'Otra Arepa Sencilla',
@@ -651,7 +651,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '174b09922187964e5d0a1d02',
         name: 'Huevos SOLO Jamon',
         price: '4600',
-        extras: [
+        additions: [
           {
             id: '5ab3239b834761dbed42d920',
             name: 'Con el queso en la Arepa',
@@ -758,7 +758,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '15e300a9a29136ace61c9c59',
         name: 'Huevos Napolitanos',
         price: '5800',
-        extras: [
+        additions: [
           {
             id: 'dcbae23ee76f02f15fa687c3',
             name: 'Otra Arepa Sencilla',
@@ -860,7 +860,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '347ca47c75b2f1f64b4c7746',
         name: 'Huevos Jamon y queso',
         price: '5100',
-        extras: [
+        additions: [
           {
             id: '97b90ca815e24c225ed2e21a',
             name: 'Otra Arepa Sencilla',
@@ -962,7 +962,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '2b41bb37ead83db9b6cc363d',
         name: 'Huevos Rancheros',
         price: '5100',
-        extras: [
+        additions: [
           {
             id: 'caf72078e712b9f0409c1b98',
             name: 'Otra Arepa Sencilla',
@@ -1064,7 +1064,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '752589832743c72c4a1e8d53',
         name: 'Huevos Rancheros Sin Queso',
         price: '4600',
-        extras: [
+        additions: [
           {
             id: '3e62afbe154a1d34905373a8',
             name: 'Otra Arepa Sencilla',
@@ -1166,7 +1166,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '05393bfca747709a009c4543',
         name: 'Huevos Enchilados',
         price: '7700',
-        extras: [
+        additions: [
           {
             id: 'c7b4da6f9f17d0a8db5cf0da',
             name: 'Otra Arepa Sencilla',
@@ -1268,7 +1268,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '72566958a7671bdad4b0512e',
         name: 'Huevos Pericos',
         price: '4400',
-        extras: [
+        additions: [
           {
             id: '02df2e343ce21e8974c8e3a1',
             name: 'Otra Arepa Sencilla',
@@ -1370,7 +1370,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'd7f10d0e499201cccb956926',
         name: 'Huevos Fritos',
         price: '4400',
-        extras: [
+        additions: [
           {
             id: '177de8adbacb35138d16ee41',
             name: 'Otra Arepa Sencilla',
@@ -1472,7 +1472,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'b4ffff88cebcb9d969a6b3a8',
         name: 'Huevos Revueltos',
         price: '4400',
-        extras: [
+        additions: [
           {
             id: '5467d76b6419a066f852292d',
             name: 'Otra Arepa Sencilla',
@@ -1574,7 +1574,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'ef6003f2971e7075e908b5ba',
         name: 'Huevos Paisa Chef',
         price: '6700',
-        extras: [
+        additions: [
           {
             id: '5e188527f585db59170c5bfb',
             name: 'Otra Arepa Sencilla',
@@ -1676,7 +1676,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '01019dedb0006fed1ae99286',
         name: 'Huevos al Gusto',
         price: '7700',
-        extras: [
+        additions: [
           {
             id: 'd252d2b8c7220bef13be634b',
             name: 'Jamon',
@@ -1813,13 +1813,13 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '816d080ee7d57d8727af062e',
         name: '5 Claras + Tocineta',
         price: '8800',
-        extras: [],
+        additions: [],
       },
       {
         id: '33423a9eefac520c78483fa8',
         name: 'Huevos Andinos',
         price: '7100',
-        extras: [],
+        additions: [],
       },
     ],
   },
@@ -1830,7 +1830,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '36fc06efc925e93ba4007685',
         name: 'Milo Caliente',
         price: '2500',
-        extras: [
+        additions: [
           {
             id: '7db28a353b5730b710db7a86',
             name: 'Agrandamiento a 12onz',
@@ -1842,7 +1842,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '5885dc5719faa6064672e22e',
         name: 'Tinto Colao',
         price: '1500',
-        extras: [
+        additions: [
           {
             id: 'dd6cfd8e62292a40d4cba2c2',
             name: 'Agrandamiento a 12onz',
@@ -1854,7 +1854,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'ba39f52541e4df270e133cc6',
         name: 'Cafe en Leche',
         price: '2200',
-        extras: [
+        additions: [
           {
             id: '813bd38abc4022e25bb6569e',
             name: 'Agrandamiento a 12onz',
@@ -1866,7 +1866,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'f262a43a8fdd9e2bddf92ecd',
         name: 'Aromatica',
         price: '2300',
-        extras: [
+        additions: [
           {
             id: 'fdc845722df4c450ffe598bb',
             name: 'Agrandamiento a 12onz',
@@ -1878,13 +1878,13 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'dc2ce8091d209cb76c42a0b4',
         name: 'Chocolate Caliente',
         price: '3500',
-        extras: [],
+        additions: [],
       },
       {
         id: 'da1218c585468a96aec21e88',
         name: 'Infusion de Frutas',
         price: '4800',
-        extras: [
+        additions: [
           {
             id: '8b2c55926949dd2560497e30',
             name: 'Roja',
@@ -1901,7 +1901,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'ae5fc0e38b35c68453f50bb2',
         name: 'Capuccino',
         price: '3000',
-        extras: [
+        additions: [
           {
             id: '619bcf0f9b63f0a96b8c25b5',
             name: 'Vainilla',
@@ -1918,25 +1918,25 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'fbddb2de849c09c40d58c961',
         name: 'Mokaccino',
         price: '3000',
-        extras: [],
+        additions: [],
       },
       {
         id: '80bb5c681bd8b06c6f58a74e',
         name: 'Chocolate peq llevar',
         price: '2300',
-        extras: [],
+        additions: [],
       },
       {
         id: 'be720724e844754220fba251',
         name: 'Medio tinto colao',
         price: '1000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'a009c8cf92a2979f77e45340',
         name: 'Te Chai 12onz',
         price: '4100',
-        extras: [],
+        additions: [],
       },
     ],
   },
@@ -1947,7 +1947,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '059f00c79709320536a6ae55',
         name: 'Zumo Naranja de 9 onz',
         price: '3200',
-        extras: [
+        additions: [
           {
             id: '38038eee49956696a822da8a',
             name: 'Vaso con Hielo',
@@ -1974,7 +1974,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '9727ecabb31d89057ba49ead',
         name: 'Zumo Naranja de 12 onz',
         price: '3600',
-        extras: [
+        additions: [
           {
             id: '308d1178f6f3f0b03fac98e4',
             name: 'Vaso con Hielo',
@@ -2006,37 +2006,37 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'ae108ea46c4f5e5b2ecd966a',
         name: 'Milo Frio',
         price: '4600',
-        extras: [],
+        additions: [],
       },
       {
         id: '12a9470432bd400b5baab089',
         name: 'Limonada Natural',
         price: '5000',
-        extras: [],
+        additions: [],
       },
       {
         id: '6a65340bf8e21dcece8a46dc',
         name: 'Limonada Cerezada',
         price: '5600',
-        extras: [],
+        additions: [],
       },
       {
         id: '379952d81e459d2148b97d2b',
         name: 'Limonada Hierba buena',
         price: '5600',
-        extras: [],
+        additions: [],
       },
       {
         id: '833d1e20dd84e22aace7df00',
         name: 'Limonada de Coco',
         price: '7500',
-        extras: [],
+        additions: [],
       },
       {
         id: '90efd8f2066c4a3539bcad54',
         name: 'Jugo Natural en Agua',
         price: '4800',
-        extras: [
+        additions: [
           {
             id: '5ac3d1b99ad58ceafbf5d338',
             name: 'Mora',
@@ -2083,7 +2083,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '71b0329446a22d94c2bd7942',
         name: 'Jugo Natural en Leche',
         price: '5000',
-        extras: [
+        additions: [
           {
             id: 'bcca55ef6b9a45e6c3534f93',
             name: 'Mora',
@@ -2130,7 +2130,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'da5e33a0a1c042d3f8bcd25e',
         name: 'Jugo Combinado',
         price: '6000',
-        extras: [
+        additions: [
           {
             id: 'dade1466c3fbaf7f72c7f502',
             name: 'Leche',
@@ -2212,7 +2212,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '17a1d00c100dccecba9bf949',
         name: 'Botella de Agua',
         price: '3000',
-        extras: [
+        additions: [
           {
             id: '698ba057ec5db220e8fe8dd0',
             name: 'Vaso con Hielo',
@@ -2224,7 +2224,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'a518a1ac1ad23885dc7d09ff',
         name: 'Botella de Agua con gas',
         price: '3300',
-        extras: [
+        additions: [
           {
             id: '6e0fe4c726312b7c6d4eda68',
             name: 'Vaso con Hielo',
@@ -2236,7 +2236,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '21c012a31fcca072a4c1eaa0',
         name: 'Cerveza',
         price: '3500',
-        extras: [
+        additions: [
           {
             id: 'a13f6b286e5dbb52f317053a',
             name: 'Poker',
@@ -2258,7 +2258,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'ce8fd6b87e511908ab2115ca',
         name: 'Gaseosa Coca-Cola personal',
         price: '3000',
-        extras: [
+        additions: [
           {
             id: '8233d8453e28f6a31b4400a0',
             name: 'Vaso con Hielo',
@@ -2270,7 +2270,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '58adb4e6e19b8e567519c942',
         name: 'Gaseosa Coca-cola Litro y medio',
         price: '5000',
-        extras: [
+        additions: [
           {
             id: '68bd816faa9ef2a15d5ff7d6',
             name: 'Vaso con Hielo',
@@ -2282,7 +2282,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '3d8c5ddb335d140cecb5a1a2',
         name: 'Jugo Hit',
         price: '3000',
-        extras: [
+        additions: [
           {
             id: '76861875ca384647d74ba757',
             name: 'Vaso con Hielo',
@@ -2319,31 +2319,31 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '09592cdc219d63d56bb0b03e',
         name: 'Jarra de Agua Fresca',
         price: '11000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'b6f0b349fc656ded16b48aec',
         name: 'Granizado de Cafe',
         price: '6500',
-        extras: [],
+        additions: [],
       },
       {
         id: 'dcf83e9fd998bddd0664f775',
         name: 'Vaso de agua',
         price: '0',
-        extras: [],
+        additions: [],
       },
       {
         id: '8e1c61570d24f735fda309ba',
         name: 'Te chai Frio',
         price: '5000',
-        extras: [],
+        additions: [],
       },
       {
         id: '82d8f5ce08f398a937bab1c1',
         name: 'Bretaña',
         price: '2800',
-        extras: [],
+        additions: [],
       },
     ],
   },
@@ -2354,55 +2354,55 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'fdc62d229503217a4aac35fe',
         name: 'Adicion Maicitos dulces',
         price: '2200',
-        extras: [],
+        additions: [],
       },
       {
         id: 'fa50310d5c6e30a79099a974',
         name: 'Adicion Salchicha Ranchera',
         price: '2200',
-        extras: [],
+        additions: [],
       },
       {
         id: 'aa829df06f1baf797c030a5a',
         name: 'Adicion de Chorizo',
         price: '4000',
-        extras: [],
+        additions: [],
       },
       {
         id: '130ac44f78ce8beca6bc0cac',
         name: 'Adicion de queso cuajada',
         price: '1800',
-        extras: [],
+        additions: [],
       },
       {
         id: '12abef53acb64e6e31c1563c',
         name: 'Adicion de Queso Crema',
         price: '1300',
-        extras: [],
+        additions: [],
       },
       {
         id: '82a2302ae0a324b04cf2ad3d',
         name: 'Adicion de Hogao',
         price: '1500',
-        extras: [],
+        additions: [],
       },
       {
         id: '3d6efde0f42179cbabb640bb',
         name: 'Adicion de Carne Burguer',
         price: '3800',
-        extras: [],
+        additions: [],
       },
       {
         id: '8b90a8c70a597821cd920448',
         name: 'Adicion de Jamon',
         price: '2300',
-        extras: [],
+        additions: [],
       },
       {
         id: 'f3268b2888e89ed92e14003a',
         name: 'Adicion de Tocineta',
         price: '2700',
-        extras: [],
+        additions: [],
       },
     ],
   },
@@ -2413,7 +2413,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'edfbdaf5a09b8c18c7a16772',
         name: 'Brocheta de Carne',
         price: '7500',
-        extras: [
+        additions: [
           {
             id: 'c61d3120d0b720de2c46d596',
             name: 'Otra Arepa Sencilla',
@@ -2515,7 +2515,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '27110acd25355cb17c6ebc4a',
         name: 'Arepa con Todo',
         price: '7000',
-        extras: [
+        additions: [
           {
             id: '0cdf5c30ef8e7ec58c7184df',
             name: 'Otra Arepa Sencilla',
@@ -2617,7 +2617,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '486388f2eee7827a0bc2cf0b',
         name: 'Lomo Caracho',
         price: '14500',
-        extras: [
+        additions: [
           {
             id: '9fb4ba5a8f1ade593af6086c',
             name: 'Otra Arepa Sencilla',
@@ -2719,7 +2719,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '37c9422b390918d554847606',
         name: 'Arepa Rellena con',
         price: '7000',
-        extras: [
+        additions: [
           {
             id: 'cc3ea04df178dbe93c37863e',
             name: 'Pollo',
@@ -2786,7 +2786,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '2ea638fe53fb50e741c10645',
         name: 'Filete de Pollo',
         price: '13000',
-        extras: [
+        additions: [
           {
             id: '8cfa9a9cf58517bfb197f32a',
             name: 'Otra Arepa Sencilla',
@@ -2888,7 +2888,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'fc04409bf7fe81d0b07e4ff3',
         name: 'Asado Ranchero',
         price: '17000',
-        extras: [
+        additions: [
           {
             id: '66dec7e461a8d353d08b7e03',
             name: 'Otra Arepa Sencilla',
@@ -2990,7 +2990,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '516fa483da76b693a4ff0e78',
         name: 'Maduro Asado',
         price: '4000',
-        extras: [
+        additions: [
           {
             id: '5741b5e175a25535396155f7',
             name: 'Queso Crema',
@@ -3007,7 +3007,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '4c6b80f14c88d545095f3d8a',
         name: 'Maduro Asado Solo',
         price: '3500',
-        extras: [],
+        additions: [],
       },
     ],
   },
@@ -3018,25 +3018,25 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '3a6e813e94149a861b858f2d',
         name: 'Básico con Prestaciones',
         price: '26945',
-        extras: [],
+        additions: [],
       },
       {
         id: 'df51f65f3d6378757cd653d6',
         name: 'Auxilio de transporte',
         price: '2218',
-        extras: [],
+        additions: [],
       },
       {
         id: 'a6d4fba1fd2a15faae0492a8',
         name: 'Dominical con prestaciones',
         price: '37453',
-        extras: [],
+        additions: [],
       },
       {
         id: '4384d55efc40ff7e2c192a92',
         name: 'Básico Nocturno',
         price: '27047',
-        extras: [],
+        additions: [],
       },
     ],
   },
@@ -3047,175 +3047,175 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: 'edb62f84a4163530490a69c4',
         name: 'Domicilio Urbano',
         price: '3000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'd06be2d982cebc67805e143a',
         name: 'Domicilio Verde Alfaguara',
         price: '4000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'ef06464d1a5f68a1c09ed42a',
         name: 'Domicilio La Morada Etapa 5 y 6',
         price: '5000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'd9b3bc7c5298dbee0411ea38',
         name: 'Domicilio Castillo (praderas y herrerias)',
         price: '6000',
-        extras: [],
+        additions: [],
       },
       {
         id: '887e00cad685c6beae45626c',
         name: 'Domicilio Ciudad Contry',
         price: '5000',
-        extras: [],
+        additions: [],
       },
       {
         id: '8ae5c62ea0d1d733d579d7d4',
         name: 'Domicilio Puente de los indios',
         price: '5000',
-        extras: [],
+        additions: [],
       },
       {
         id: '778c5056405356c64d88bddd',
         name: 'Domicilio Mira Valle',
         price: '9000',
-        extras: [],
+        additions: [],
       },
       {
         id: '24680fcc93f68d1dbc729b07',
         name: 'Domicilio Potrerito',
         price: '10000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'cb5606ce53876ae49273efc1',
         name: 'Domicilio Ciudad de Dios',
         price: '5000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'a9d57666bddcd80bfbb07c8e',
         name: 'Domicilio 5 soles',
         price: '4000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'bdca88426977c34f07d2fe7c',
         name: 'Contry plaza I II III',
         price: '3000',
-        extras: [],
+        additions: [],
       },
       {
         id: '532b95500bdbec123649b019',
         name: 'Domicilio Paseo de Pangola',
         price: '3500',
-        extras: [],
+        additions: [],
       },
       {
         id: '239e2f68cab3c638e782233c',
         name: 'Domicilio Riveras',
         price: '3000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'd818ab0e14124144881bcda8',
         name: 'Domicilio Alfaguara',
         price: '2500',
-        extras: [],
+        additions: [],
       },
       {
         id: '57d88150b4e3bf0912298c85',
         name: 'Domicilio Mercedes',
         price: '5000',
-        extras: [],
+        additions: [],
       },
       {
         id: '43410c5ac5b2342186774cfa',
         name: 'Domicilio Pradera',
         price: '2000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'c3e1a245a433c006d6c0934b',
         name: 'Domicilio  Morada ultas. etapas',
         price: '6000',
-        extras: [],
+        additions: [],
       },
       {
         id: '1e860b79d46254d4c1b62b99',
         name: 'Domicilio los Naranjos',
         price: '4000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'e988028fd1661c62ac5b3fe8',
         name: 'Domicilio Parque Natura',
         price: '5000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'f08f44034954df4106a95c1a',
         name: 'Domicilio Verde Alfaguara Casazul',
         price: '4500',
-        extras: [],
+        additions: [],
       },
       {
         id: 'd776296dc919d914ad2e908b',
         name: 'Domicilio Valle Verde',
         price: '7000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'ea1e03898c30eb6f071298ca',
         name: 'Domicilio San Marino',
         price: '3500',
-        extras: [],
+        additions: [],
       },
       {
         id: '439cab60b58db44685b6165a',
         name: 'Domicilio Caminos y Paisajes de Pangola',
         price: '4000',
-        extras: [],
+        additions: [],
       },
       {
         id: '4ec6c10dc68b2ced6d768a40',
         name: 'Domicilio Surcos de Pangola (Porteria 1 y 2)',
         price: '4000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'dcdd5c27681b6f4110fe460e',
         name: 'Domicilio Bio Ciudadela La Reserva',
         price: '3000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'd212d799857c0dc62873f884',
         name: 'Domicilio CR. Carbonero',
         price: '3000',
-        extras: [],
+        additions: [],
       },
       {
         id: '8d1507df5d00d17ca3017c61',
         name: 'Domicilio Parque Residencial La Arboleda',
         price: '3000',
-        extras: [],
+        additions: [],
       },
       {
         id: '7421a0f26ed1f2d24a8e67a6',
         name: 'Domicilio Los Anturios',
         price: '3000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'd17b8a66f3c547c73be32eb3',
         name: 'Domicilio CR. Hacienda El Pino',
         price: '3000',
-        extras: [],
+        additions: [],
       },
     ],
   },
@@ -3226,7 +3226,7 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '5224d4ed7cd801a7bda4c1ec',
         name: 'Huevos 3 Claras 1 Yema',
         price: '3000',
-        extras: [
+        additions: [
           {
             id: 'c4ebc878b6dd4bf70a362b26',
             name: 'Cuajada en la arepa',
@@ -3243,85 +3243,85 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '3f1b573442372a4141d8e9d6',
         name: 'Vaso 12 onz Leche',
         price: '2850',
-        extras: [],
+        additions: [],
       },
       {
         id: '0590592bb90f922070462959',
         name: 'Unidad crudas',
         price: '500',
-        extras: [],
+        additions: [],
       },
       {
         id: 'ba239c7515e934bbfb2d5106',
         name: 'Bolsa de Leche',
         price: '2800',
-        extras: [],
+        additions: [],
       },
       {
         id: '33377b712e2d4a2d47a60c74',
         name: 'Paquete de Chorizos',
         price: '25000',
-        extras: [],
+        additions: [],
       },
       {
         id: '85a7ff4838f71cfd29856cf9',
         name: 'Huevo Sin proceso',
         price: '450',
-        extras: [],
+        additions: [],
       },
       {
         id: '9efaa3dc8e309318b386679f',
         name: 'SERVICIO DE COMEDOR',
         price: '30000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'dab976516e10624d40d9a8a3',
         name: 'Vaso de Leche 9  Onz',
         price: '1100',
-        extras: [],
+        additions: [],
       },
       {
         id: '4dd52448474a24cc6bf3ed88',
         name: 'Te Pequeño',
         price: '2300',
-        extras: [],
+        additions: [],
       },
       {
         id: '033703c1a95d13ca19ed70eb',
         name: 'Huevo crudo',
         price: '350',
-        extras: [],
+        additions: [],
       },
       {
         id: 'ce7170206be3e9a8352bd690',
         name: 'Saldo Pendiente',
         price: '2000',
-        extras: [],
+        additions: [],
       },
       {
         id: 'ad2b3aaa716ed2b9ce8be8ae',
         name: 'Invitacion',
         price: '2500',
-        extras: [],
+        additions: [],
       },
       {
         id: '01333f4dc804fa0d34b9b879',
         name: 'Porcion de Frutas',
         price: '1500',
-        extras: [],
+        additions: [],
       },
       {
         id: '0ab2a64980320a67d7faefef',
         name: 'Huevos 5 Claras',
         price: '4500',
-        extras: [],
+        additions: [],
       },
       {
         id: '4cbfb8981974d9c6dbceae90',
         name: 'Huevos 5 Claras',
         price: '4500',
-        extras: [
+        additions: [
           {
             id: 'ce8027ff18834172eb679273',
             name: 'arepa cuajada',
@@ -3333,19 +3333,19 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '368953c4be2848876f17b0a1',
         name: 'Adicion Huevo',
         price: '1700',
-        extras: [],
+        additions: [],
       },
       {
         id: '7f0656a8f87f4f2177c33025',
         name: 'Decoracion',
         price: '10000',
-        extras: [],
+        additions: [],
       },
       {
         id: '91ad0ec02d71c61e2bc89a35',
         name: 'Medio Vaso Leche',
         price: '2000',
-        extras: [],
+        additions: [],
       },
     ],
   },
@@ -3356,19 +3356,19 @@ export const MOCK_CATEGORIES: Categorie[] = [
         id: '0cf6781cf7fb96f2d3433d18',
         name: 'Paleta dog Higado',
         price: '3500',
-        extras: [],
+        additions: [],
       },
       {
         id: 'c7e1a3fac82af81b8812451c',
         name: 'Paleta dog pollo',
         price: '2200',
-        extras: [],
+        additions: [],
       },
       {
         id: 'c8d3cdae883d4c3a886474be',
         name: 'Paleta dog carne',
         price: '3500',
-        extras: [],
+        additions: [],
       },
     ],
   },
