@@ -10,7 +10,7 @@ import { Item } from '../../models/item';
 export class MenuService {
   constructor() { }
 
-  public getGeneralData(data: any) {
+  public convertToMenuModel(data: any) {
     let fullMenu: Categorie[];
     let categories = this.getCategories(data);
 
@@ -64,5 +64,9 @@ export class MenuService {
     });
 
     return extrasList;
+  }
+
+  convertToTextFormat(menuData : Categorie[] ) {
+    
   }
 }

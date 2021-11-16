@@ -52,7 +52,7 @@ export class MenusComponent implements OnInit {
               this.creationTime = this.rawMenu.creationTime;
               localStorage.setItem(AppConstants.EXTERNAL_MENU, JSON.stringify(this.rawMenu));
 
-              this.processedMenu = this.menuService.getGeneralData(this.rawMenu.menu);
+              this.processedMenu = this.menuService.convertToMenuModel(this.rawMenu.menu);
               this.menuLoaded = true;
             });
           }
@@ -63,8 +63,12 @@ export class MenusComponent implements OnInit {
       this.rawMenu = JSON.parse(this.rawMenu);
       this.lastEditTime = this.rawMenu.lastEditTime;
       this.creationTime = this.rawMenu.creationDate;
-      this.processedMenu = this.menuService.getGeneralData(this.rawMenu.menu);
+      this.processedMenu = this.menuService.convertToMenuModel(this.rawMenu.menu);
       this.menuLoaded = true;
     }
+  }
+
+  downloadMenuFile() {
+
   }
 }

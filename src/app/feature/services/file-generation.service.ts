@@ -11,7 +11,7 @@ export class FileGenerationService {
 
   public downloadFile() {
     //Get info from localStorage
-    let menuText = sessionStorage.getItem(AppConstants.MENU_DATA);
+    let menuText = localStorage.getItem(AppConstants.MENU_DATA);
 
     if (menuText) {
       //Process the information
@@ -19,7 +19,6 @@ export class FileGenerationService {
 
       //Generate the file
       this.fileSAverService.save(menuBlob, AppConstants.TEXT_FILE);
-    } else {
     }
   }
 

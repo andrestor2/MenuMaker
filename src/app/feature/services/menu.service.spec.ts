@@ -18,7 +18,7 @@ describe('MenuService', () => {
   it('Process a large menu', () => {
     let menu = MOCK_CATEGORIES;
     
-    let fullMenu: Categorie[] = service.getGeneralData(menu);
+    let fullMenu: Categorie[] = service.convertToMenuModel(menu);
 
     expect(fullMenu.length).toEqual(menu.length);
   });

@@ -41,3 +41,6 @@
 <div *ngIf="processedMenu.length !== 0">
   <button (disabled)="menuLoaded" (click)="loadMenu(true)"> Reload Menu </button>
 </div>
+<div *ngIf="processedMenu.length !== 0">
+  <button (click)="downloadMenuFile()"> Download file </button>
+</div>
