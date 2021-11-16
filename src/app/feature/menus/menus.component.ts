@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AppConstants } from 'src/app/constants/appConstants';
 import { Categorie } from '../../models/categorie';
 import { DataClientService } from '../services/data-client.service';
+import { FileGenerationService } from '../services/file-generation.service';
 import { MenuService } from '../services/menu.service';
 
 @Component({
@@ -21,7 +22,8 @@ export class MenusComponent implements OnInit {
 
   constructor(
     private menuService: MenuService,
-    private dataClientService: DataClientService
+    private dataClientService: DataClientService,
+    private fileGenerationService: FileGenerationService
   ) { }
 
   ngOnInit(): void { }
@@ -69,6 +71,16 @@ export class MenusComponent implements OnInit {
   }
 
   downloadMenuFile() {
-
+    //Get info from localStorage
+    const menuData = localStorage.getItem(AppConstants.MENU_DATA);
+    if (menuData) {
+      const menuObject = <Categorie[]>JSON.parse(menuData);
+      //Format the menu data
+      const formatedText = this.menuService.convertToTextFormat(menuObject);
+      this.fileGenerationService.downloadFile(formatedText);
+    } else {
+      // Does not exist a menu in the localStorage.
+      // Show information below the button.
+    }
   }
 }

@@ -9,13 +9,11 @@ import { AppConstants } from '../../constants/appConstants';
 export class FileGenerationService {
   constructor(private fileSAverService: FileSaverService) { }
 
-  public downloadFile() {
-    //Get info from localStorage
-    let menuText = localStorage.getItem(AppConstants.MENU_DATA);
+  public downloadFile(formatedText: string) {    
 
-    if (menuText) {
+    if (formatedText) {
       //Process the information
-      let menuBlob = this.generateBlob(menuText);
+      let menuBlob = this.generateBlob(formatedText);
 
       //Generate the file
       this.fileSAverService.save(menuBlob, AppConstants.TEXT_FILE);
