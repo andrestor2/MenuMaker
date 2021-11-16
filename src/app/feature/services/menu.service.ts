@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Categorie } from '../../models/categorie';
 import { Addition } from '../../models/addition';
 import { Item } from '../../models/item';
+import { AppConstants } from 'src/app/constants/appConstants';
 
 @Injectable({
   providedIn: 'root',
@@ -66,7 +67,24 @@ export class MenuService {
     return extrasList;
   }
 
-  convertToTextFormat(menuData : Categorie[] ) {
-    
+  convertToTextFormat(menuData: Categorie[]) {
+    let formatedText: string = "";
+    for (const categorie of menuData) {
+      formatedText.concat(categorie.name);
+      formatedText.concat("\n");
+
+      for (const item of categorie.items) {
+        formatedText.concat(item.name + ' ' + item.price)
+        formatedText.concat("\n");
+
+        for (const addition of item.additions) {
+          formatedText.concat(AppConstants.ADDITION_SYMBOL + ' ')
+            .concat(addition.name + ' ' + addition.price)
+          formatedText.concat("\n");
+        }
+      }
+    }
+    return formatedText;
   }
+  
 }
