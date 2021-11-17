@@ -68,23 +68,23 @@ export class MenuService {
   }
 
   convertToTextFormat(menuData: Categorie[]) {
-    let formatedText: string = "";
+    let formatedText: string = '';
     for (const categorie of menuData) {
-      formatedText.concat(categorie.name);
-      formatedText.concat("\n");
+      formatedText = formatedText.concat(categorie.name);
+      formatedText = formatedText.concat("\n");
 
       for (const item of categorie.items) {
-        formatedText.concat(item.name + ' ' + item.price)
-        formatedText.concat("\n");
+        formatedText = formatedText.concat(item.name + ' ' + item.price)
+        formatedText = formatedText.concat("\n");
 
         for (const addition of item.additions) {
-          formatedText.concat(AppConstants.ADDITION_SYMBOL + ' ')
+          formatedText = formatedText.concat(AppConstants.ADDITION_SYMBOL + ' ')
             .concat(addition.name + ' ' + addition.price)
-          formatedText.concat("\n");
+          formatedText = formatedText.concat("\n");
         }
       }
     }
     return formatedText;
   }
-  
+
 }

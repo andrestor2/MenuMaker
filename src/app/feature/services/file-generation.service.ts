@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import * as moment from 'moment';
 
 import { FileSaverService } from 'ngx-filesaver';
 import { AppConstants } from '../../constants/appConstants';
@@ -7,7 +8,7 @@ import { AppConstants } from '../../constants/appConstants';
   providedIn: 'root',
 })
 export class FileGenerationService {
-  constructor(private fileSAverService: FileSaverService) { }
+  constructor(private fileSaverService: FileSaverService) { }
 
   public downloadFile(formatedText: string) {    
 
@@ -15,14 +16,16 @@ export class FileGenerationService {
       //Process the information
       let menuBlob = this.generateBlob(formatedText);
 
-      //Generate the file
-      this.fileSAverService.save(menuBlob, AppConstants.TEXT_FILE);
+      //Generate the file      
+      const now = moment().format('YYYYMMDD_HHMMSS'); 
+      const fileName = AppConstants.TEXT_FILE.concat(now.toString()).concat(AppConstants.MENU_FILE_EXTENSION);
+      this.fileSaverService.save(menuBlob, fileName);
     }
   }
 
   private generateBlob(fullMenu: string) {
-    let textValue: string = JSON.stringify(fullMenu);
-    let blobData = new Blob([textValue], {
+    //let textValue: string = JSON.stringify(fullMenu);
+    let blobData = new Blob([fullMenu], {
       type: 'text/plain',
     });
 

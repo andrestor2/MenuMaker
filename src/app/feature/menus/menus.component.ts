@@ -55,6 +55,7 @@ export class MenusComponent implements OnInit {
               localStorage.setItem(AppConstants.EXTERNAL_MENU, JSON.stringify(this.rawMenu));
 
               this.processedMenu = this.menuService.convertToMenuModel(this.rawMenu.menu);
+              localStorage.setItem(AppConstants.MENU_DATA, JSON.stringify(this.processedMenu));
               this.menuLoaded = true;
             });
           }
