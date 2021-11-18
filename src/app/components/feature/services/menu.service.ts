@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 
-import { Categorie } from '../../models/categorie';
-import { Addition } from '../../models/addition';
-import { Item } from '../../models/item';
+import { Categorie } from '../../../models/categorie';
+import { Addition } from '../../../models/addition';
+import { Item } from '../../../models/item';
 import { AppConstants } from 'src/app/constants/appConstants';
 
 @Injectable({
@@ -66,6 +66,15 @@ export class MenuService {
 
     return extrasList;
   }
+
+  convertObjectToTable() {
+
+  }
+
+  convertTableToObject() {
+
+  }
+
 
   convertToTextFormat(menuData: Categorie[]) {
     let formatedText: string = '';
