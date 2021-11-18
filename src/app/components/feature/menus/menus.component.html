@@ -21,15 +21,18 @@
   </div>
 </div>
 <div *ngIf="processedMenu.length !== 0">
-  <h2>Menu loaded</h2>
-  <div class="d-grid gap-2 d-md-flex justify-content-md-evenly">
+  <h2>Menu loaded</h2>  
+  <div class="d-grid gap-2 d-md-flex justify-content-md-evenly p-2">
     <button class="btn btn-primary btn btn-danger" (disabled)="menuLoaded" (click)="reloadMenu()"> Reload Menu
     </button>
     <button class="btn btn-warning" (click)="downloadMenuFile()"> Download file </button>
     <button class="btn btn-primary me-md-2 btn-success" type="button" (click)="saveChanges()">Guardar</button>
   </div>
+  <div class="bd-highlight w-50">
+    <input type="text" class="form-control" placeholder="Search..." aria-label="Search..."
+      aria-describedby="button-addon2">
+  </div>
   <span>Last edit: {{lastEditTime | date:'mediumDate'}}</span>
-  
   <div class="content" role="main">
     <table class="table table-striped table-bordered ">
       <thead>
