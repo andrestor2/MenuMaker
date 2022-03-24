@@ -56,7 +56,8 @@
   }
   
   .left {
-    flex: 30%;
+    flex: 30%; 
+    
   }
   
   .right {

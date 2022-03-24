@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppConstants } from 'src/app/constants/appConstants';
-import { Categorie } from '../../models/categorie';
+import { Categorie } from '../../../models/categorie';
 import { DataClientService } from '../services/data-client.service';
 import { FileGenerationService } from '../services/file-generation.service';
 import { MenuService } from '../services/menu.service';
@@ -10,7 +10,7 @@ import { MenuService } from '../services/menu.service';
   templateUrl: './menus.component.html',
   styleUrls: ['./menus.component.css'],
 })
-export class MenusComponent implements OnInit {
+export class MenuTableComponent implements OnInit {
   selectedCategorie?: Categorie;
   processedMenu: Categorie[] = [];
   rawMenu?: any;
@@ -26,7 +26,9 @@ export class MenusComponent implements OnInit {
     private fileGenerationService: FileGenerationService
   ) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.loadMenu(false);
+   }
 
   onSelect(categorie: Categorie) {
     this.selectedCategorie = categorie;
@@ -36,8 +38,8 @@ export class MenusComponent implements OnInit {
   loadMenu(useExternal: boolean) {
     let localToken = localStorage.getItem(AppConstants.EXTERNAL_TOKEN);
     this.rawMenu = localStorage.getItem(AppConstants.EXTERNAL_MENU);
-
-    if (!localToken || !this.rawMenu || useExternal) {
+    console.log("useExternal: ", useExternal);
+    if (!localToken || !this.rawMenu || useExternal) {      
       if (this.username && this.password) {
         console.log('Load Data');
         this.rawMenu = { menu: '', lastEditTime: '', creationTime: '' };
@@ -69,6 +71,15 @@ export class MenusComponent implements OnInit {
       this.processedMenu = this.menuService.convertToMenuModel(this.rawMenu.menu);
       this.menuLoaded = true;
     }
+  }
+
+  saveChanges() {
+    localStorage.setItem(AppConstants.MENU_DATA, JSON.stringify(this.processedMenu));
+  }
+
+  reloadMenu() {
+    const empty: Categorie[] = [];
+    this.processedMenu = empty;
   }
 
   downloadMenuFile() {

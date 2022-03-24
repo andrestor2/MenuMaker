@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import * as moment from 'moment';
 
 import { FileSaverService } from 'ngx-filesaver';
-import { AppConstants } from '../../constants/appConstants';
+import { AppConstants } from '../../../constants/appConstants';
 
 @Injectable({
   providedIn: 'root',

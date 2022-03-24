@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 
-import { Categorie } from '../../models/categorie';
-import { Addition } from '../../models/addition';
-import { Item } from '../../models/item';
+import { Categorie } from '../../../models/categorie';
+import { Addition } from '../../../models/addition';
+import { Item } from '../../../models/item';
 import { AppConstants } from 'src/app/constants/appConstants';
 
 @Injectable({
@@ -26,6 +26,7 @@ export class MenuService {
       let items = this.getItems(cat.items);
       let categorie: Categorie = {
         name: cat.name,
+        visible: true,
         items: items,
       };
 
@@ -37,13 +38,14 @@ export class MenuService {
   private getItems(items: any[]) {
     let itemList: Item[] = [];
     items.forEach((item) => {
-      let extras = this.getExtras(item.extras);
+      let additions = this.getAdditions(item.extras);
 
       let newItem: Item = {
         id: item.id,
         name: item.name,
         price: item.price,
-        additions: extras,
+        visible: true,
+        additions: additions,
       };
 
       itemList.push(newItem);
@@ -52,7 +54,7 @@ export class MenuService {
     return itemList;
   }
 
-  private getExtras(extras: any[]) {
+  private getAdditions(extras: any[]) {
     let extrasList: Addition[] = [];
 
     extras.forEach((extra) => {
@@ -60,6 +62,7 @@ export class MenuService {
         id: extra.id,
         name: extra.name,
         price: extra.price,
+        visible: true
       };
       extrasList.push(newExtra);
     });
@@ -85,6 +88,10 @@ export class MenuService {
       }
     }
     return formatedText;
+  }
+
+  menuFilter(menuData: Categorie[]) {
+
   }
 
 }

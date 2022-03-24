@@ -1,8 +1,0 @@
-<div *ngIf="categorie">
-  <h2>{{ categorie.name | uppercase }} Details</h2>
-  <div>
-    <label for="categorie-name">Categorie name: </label>
-    <input id="categorie-name" [(ngModel)]="categorie.name" placeholder="name" />    
-  </div>
-  <div><span>#: </span>{{ categorie.items.length }}</div>
-</div>
