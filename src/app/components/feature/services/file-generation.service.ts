@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import * as moment from 'moment';
+import moment from 'moment';
 
 import { FileSaverService } from 'ngx-filesaver';
 import { AppConstants } from '../../../constants/appConstants';

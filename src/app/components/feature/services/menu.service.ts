@@ -91,7 +91,7 @@ export class MenuService {
   }
 
   menuFilter(menuData: Categorie[]) {
-
+    
   }
 
 }
